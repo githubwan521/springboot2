@@ -1,0 +1,19 @@
+###服务端口号
+server:
+  port: 8000
+###服务名称
+spring:
+  application:
+    name: zkmember
+  cloud:
+    zookeeper:
+      connect-string: localhost:2181
+      discovery:
+       enabled: true
+       register: true
+endpoints:
+  restart:
+    enabled: true
+logging:
+  level:
+    org.apache.zookeeper.ClientCnxn: INFO

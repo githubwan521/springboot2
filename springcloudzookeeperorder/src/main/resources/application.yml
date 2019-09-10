@@ -1,0 +1,14 @@
+###服务端口号
+server:
+  port: 8060
+###服务名称
+spring:
+  application:
+    name: zkorder
+  cloud:
+    zookeeper:
+     connect-string: 127.0.0.1:2181
+    ###注册到zookeeper地址
+     discovery:
+       enabled: true
+       register: true
